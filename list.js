@@ -8,23 +8,13 @@ const info = document.querySelector('#task') // input alanına ulaştık
 ekleButonu.addEventListener('click', ekle ) // butona bir event ve fonksiyon ekledik
 
 
-
-function ekle(event){
-    event.preventDefault() 
-    
-
-    text = info.value
-    
-  
-}
-
-
 // ELEMENT EKLEMEMİZİ SAĞLAYAN FONKSİYONUMUZ
 function ekle(event){
     if(info.value == null || info.value == ""){
 
         $('.dont').toast('show')
         // toats kodu ile html'de kurulmuş olan uyarı yapısını sınıf(.dont) bilgisi ile çağırdık.
+        
 
     }else{
         event.preventDefault() 
